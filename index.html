@@ -34,18 +34,21 @@
  
     </div>
     <script>
-let a=document.getElementById('a')
-let b=document.getElementById('b')
-let x=document.getElementById('x')
-let result=document.getElementById('result')
-let result2=document.getElementById('result2')
-function faizihesabla(){
-    result.innerHTML=b.value+'% faizi: '+(+a.value*b.value)/100
+let a = document.getElementById('a');
+let b = document.getElementById('b');
+let x = document.getElementById('x');
+let result = document.getElementById('result');
+let result2 = document.getElementById('result2');
 
+function faizihesabla() {
+  let cavab = (Number(a.value) * Number(b.value)) / 100;
+  result.innerHTML = `${b.value}% faizi: ${cavab}`;
 }
-function kubvekvadrati(){
-  result2.innerHTML="Kvadrat: "+(x.value*x.value)+" | "+"Kub: "+(x.value*x.value*x.value)
+
+function kubvekvadrati() {
+  result2.innerHTML = `Kvadrat: ${Number(x.value)** 2} | Kub: ${Number(x.value) ** 3}`;
 }
+
     </script>
       </body>
 </html>
